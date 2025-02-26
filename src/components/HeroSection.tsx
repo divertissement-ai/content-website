@@ -52,7 +52,7 @@ export const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <div className="size-4 rounded-full bg-gradient-to-br from-primary to-secondary" />
                 <p className="text-sm text-foreground/60">
-                  A product by Content Creator Connector
+                  A product by Divertissement
                 </p>
               </div>
             </div>
