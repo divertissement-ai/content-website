@@ -8,11 +8,7 @@ export const HeroSection = () => {
   return (
     <section className="min-h-screen relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background">
       {/* Company name header */}
-      <div className="absolute top-0 left-0 w-full p-4 md:p-6">
-        <span className="font-medium text-sm md:text-base text-foreground/60">
-          Content Creator Connector
-        </span>
-      </div>
+     
       
       <div className="flex flex-col md:flex-row items-center min-h-screen">
         <div className="w-full lg:w-2/3 p-8 md:p-16 flex flex-col justify-center z-10">
