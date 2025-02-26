@@ -1,103 +1,123 @@
-
 import { HeroSection } from "@/components/HeroSection";
-import { Counter } from "@/components/Counter";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Button } from "@/components/ui/button";
+import { Brain, Zap, MessageSquare, TrendingUp, BarChart3, Mail } from "lucide-react";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
       <HeroSection />
       
-      {/* Members section */}
-      <section className="py-20 px-8 bg-gradient-to-b from-background via-secondary/5 to-background">
+      {/* AI Assistant section */}
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-b from-background via-secondary/5 to-background">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-16">
-            MEMBERS ONLY
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-8 md:mb-16">
+            AI-POWERED INSIGHTS
           </h2>
-          <div className="flex flex-col items-center space-y-8">
-            <div className="glass-panel p-8 md:p-12 rounded-2xl">
-              <p className="text-lg mb-4">Verified Creators Using Content</p>
-              <Counter end={1234} />
+          <div className="flex flex-col items-center space-y-6 md:space-y-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-700">
+              Our app harnesses the power of advanced AI agents and scalable databases to provide content creators with deep, actionable insights that drive growth and engagement.
+            </p>
+            <div className="glass-panel p-6 sm:p-8 md:p-12 rounded-2xl w-full">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start justify-center text-left">
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4">Seamless Platform Integration</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>TikTok</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>YouTube</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Instagram</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Email</span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-semibold mb-4">Personalized AI-Driven Guidance</h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Brand Deal Recommendations</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Content Performance Analysis</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Audience Demographics</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary flex-shrink-0 mt-1">✓</span>
+                      <span>Content Strategy Planning</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features section */}
-      <section className="py-20 px-8 bg-gradient-to-b from-background via-primary/5 to-background">
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-b from-background via-primary/5 to-background">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16">
             TOOLS FOR THE INFLUENTIAL
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <FeatureCard
-              title="Algorithm Decoder"
-              description="AI-powered insights predict and optimize your content performance across platforms."
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              }
-              stats="+43% Engagement"
+              title="AI Content Analysis"
+              description="Our AI analyzes your content across platforms to identify what resonates with your audience, from video formats to topics that drive engagement."
+              icon={<Brain className="w-6 h-6" />}
+              benefit="Never miss what your audience truly wants"
             />
             <FeatureCard
-              title="Brand Match"
-              description="Connect with premium brands actively seeking established creators."
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              }
-              stats="2.5x Revenue"
+              title="Smart Brand Matching"
+              description="Get matched with brands that align with your content and audience. Our AI identifies when brands engage with your content and suggests potential partnerships."
+              icon={<Zap className="w-6 h-6" />}
+              benefit="Turn engagement into partnership opportunities"
             />
             <FeatureCard
-              title="Revenue Amplifier"
-              description="Unlock advanced monetization strategies beyond standard sponsorships."
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
-              }
-              stats="+127% Growth"
+              title="AI Content Assistant"
+              description="Chat with our AI to brainstorm content ideas, plan your content calendar, and get suggestions based on trending topics in your niche."
+              icon={<MessageSquare className="w-6 h-6" />}
+              benefit="Your personal creative partner"
+            />
+            <FeatureCard
+              title="Audience Insights"
+              description="Discover detailed demographics about your audience, including age, location, interests, and viewing patterns across all your connected platforms."
+              icon={<BarChart3 className="w-6 h-6" />}
+              benefit="Know exactly who's watching and why"
+            />
+            <FeatureCard
+              title="Performance Tracking"
+              description="Track which content types perform best - whether it's 'how-to' tutorials, 'day in the life' vlogs, or other formats specific to your niche."
+              icon={<TrendingUp className="w-6 h-6" />}
+              benefit="Data-driven content strategy"
+            />
+            <FeatureCard
+              title="Unified Communication"
+              description="Never miss an important email or brand outreach again. Our platform consolidates all your professional communications in one place."
+              icon={<Mail className="w-6 h-6" />}
+              benefit="Stay on top of every opportunity"
             />
           </div>
         </div>
       </section>
 
       {/* iOS App section */}
-      <section className="py-20 px-8 bg-gradient-to-b from-background via-secondary/5 to-background">
-        <div className="container mx-auto text-center space-y-8">
+      <section className="py-12 md:py-20 px-4 md:px-8 bg-gradient-to-b from-background via-secondary/5 to-background">
+        <div className="container mx-auto text-center space-y-6 md:space-y-8">
           <div className="flex flex-col items-center gap-6">
             <span className="inline-block px-4 py-2 text-sm font-medium bg-primary/10 text-primary rounded-full">
               Content for iOS
@@ -108,7 +128,16 @@ const Index = () => {
             <p className="text-lg text-gray-600 max-w-2xl">
               Access all premium features on the go with our powerful iOS app.
             </p>
-            <Button 
+            <div className="text-small text-gray-600 max-w-2xl">
+              Coming Soon! Sign up for early access.
+            </div>
+            <Button
+              size="lg"
+              className="bg-black hover:bg-black/80 text-white"
+            >
+              Join waitlist
+            </Button>
+            {/* <Button 
               size="lg"
               className="bg-black hover:bg-black/80 text-white"
             >
@@ -118,13 +147,13 @@ const Index = () => {
                 </svg>
               </span>
               Download on the App Store
-            </Button>
+            </Button> */}
           </div>
           
           {/* Company attribution */}
           <div className="pt-12 border-t border-gray-100">
             <p className="text-sm text-gray-500">
-              Content is a product by Content Creator Connector
+              Content is a product by Divertissement
             </p>
           </div>
         </div>

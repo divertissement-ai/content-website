@@ -1,0 +1,337 @@
+/* Platform Pages Shared Base Styles */
+:root {
+  /* Base theme colors */
+  --ai-primary: #6366f1;
+  --ai-secondary: #a5b4fc;
+  --ai-accent: #4f46e5;
+  --ai-gradient: linear-gradient(135deg, #6366f1, #4f46e5);
+  
+  --brand-primary: #ec4899;
+  --brand-secondary: #f9a8d4;
+  --brand-accent: #db2777;
+  --brand-gradient: linear-gradient(135deg, #ec4899, #db2777);
+  
+  --outreach-primary: #10b981;
+  --outreach-secondary: #6ee7b7;
+  --outreach-accent: #059669;
+  --outreach-gradient: linear-gradient(135deg, #10b981, #059669);
+  
+  --performance-primary: #f59e0b;
+  --performance-secondary: #fcd34d;
+  --performance-accent: #d97706;
+  --performance-gradient: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+/* Base Platform Styles */
+.platform-page {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+.platform-container {
+  padding: 5rem 1.5rem 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Common Header Styles with Variants */
+.platform-header {
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.platform-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+.platform-subtitle {
+  font-size: 1.125rem;
+  max-width: 650px;
+  line-height: 1.6;
+  color: hsl(var(--foreground));
+  opacity: 0.8;
+  margin: 0 auto;
+}
+
+/* Streamlined Layout */
+.platform-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Card Base Styles */
+.platform-card {
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.05;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature List Styles */
+.platform-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.platform-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+}
+
+.platform-feature-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: hsl(var(--border));
+}
+
+.platform-feature-icon {
+  flex-shrink: 0;
+  padding: 0.75rem;
+  border-radius: 12px;
+  background: hsl(var(--muted));
+  color: hsl(var(--foreground));
+}
+
+.platform-feature-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.25rem;
+}
+
+/* Card Title Styles */
+.platform-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  position: relative;
+  display: inline-block;
+  color: hsl(var(--foreground));
+}
+
+.platform-card-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 3rem;
+  height: 0.25rem;
+  border-radius: 4px;
+}
+
+.platform-card-content {
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: hsl(var(--muted-foreground));
+}
+
+/* ===== AI ANALYTICS SPECIFIC STYLES ===== */
+.ai-analytics .platform-title {
+  background-image: var(--ai-gradient);
+}
+
+.ai-analytics .platform-feature-icon {
+  color: var(--ai-primary);
+}
+
+.ai-analytics .platform-card-title::after {
+  background: var(--ai-gradient);
+}
+
+/* ===== BRAND MATCHING SPECIFIC STYLES ===== */
+.brand-matching .platform-title {
+  background-image: var(--brand-gradient);
+}
+
+.brand-matching .platform-feature-icon {
+  color: var(--brand-primary);
+}
+
+.brand-matching .platform-card-title::after {
+  background: var(--brand-gradient);
+}
+
+/* ===== AUTOMATED OUTREACH SPECIFIC STYLES ===== */
+.automated-outreach .platform-title {
+  background-image: var(--outreach-gradient);
+}
+
+.automated-outreach .platform-feature-icon {
+  color: var(--outreach-primary);
+}
+
+.automated-outreach .platform-card-title::after {
+  background: var(--outreach-gradient);
+}
+
+/* ===== PERFORMANCE TRACKING SPECIFIC STYLES ===== */
+.performance-tracking .platform-title {
+  background-image: var(--performance-gradient);
+}
+
+.performance-tracking .platform-feature-icon {
+  color: var(--performance-primary);
+}
+
+.performance-tracking .platform-card-title::after {
+  background: var(--performance-gradient);
+}
+
+/* Decorative Elements */
+.platform-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 20px 20px;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ai-analytics::before {
+  background-image: radial-gradient(var(--ai-secondary) 1px, transparent 1px);
+}
+
+.brand-matching::before {
+  background-image: radial-gradient(var(--brand-secondary) 1px, transparent 1px);
+}
+
+.automated-outreach::before {
+  background-image: radial-gradient(var(--outreach-secondary) 1px, transparent 1px);
+}
+
+.performance-tracking::before {
+  background-image: radial-gradient(var(--performance-secondary) 1px, transparent 1px);
+}
+
+/* Custom Shape Decorations */
+.platform-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.platform-shape-1 {
+  top: 10%;
+  right: 10%;
+  width: 200px;
+  height: 200px;
+}
+
+.platform-shape-2 {
+  bottom: 10%;
+  left: 5%;
+  width: 150px;
+  height: 150px;
+}
+
+.ai-analytics .platform-shape-1 {
+  background: var(--ai-primary);
+}
+
+.ai-analytics .platform-shape-2 {
+  background: var(--ai-accent);
+}
+
+.brand-matching .platform-shape-1 {
+  background: var(--brand-primary);
+}
+
+.brand-matching .platform-shape-2 {
+  background: var(--brand-accent);
+}
+
+.automated-outreach .platform-shape-1 {
+  background: var(--outreach-primary);
+}
+
+.automated-outreach .platform-shape-2 {
+  background: var(--outreach-accent);
+}
+
+.performance-tracking .platform-shape-1 {
+  background: var(--performance-primary);
+}
+
+.performance-tracking .platform-shape-2 {
+  background: var(--performance-accent);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .platform-container {
+    padding: 6rem 2rem 4rem;
+  }
+  
+  .platform-title {
+    font-size: 3rem;
+  }
+  
+  .platform-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .platform-card {
+    padding: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .platform-container {
+    padding: 7rem 2rem 5rem;
+  }
+  
+  .platform-title {
+    font-size: 3.5rem;
+  }
+  
+  .platform-card {
+    padding: 2.75rem;
+  }
+}
