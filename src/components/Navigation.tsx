@@ -14,49 +14,72 @@ export const Navigation = () => {
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                <NavigationMenuTrigger>Platform</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid gap-3 p-6 w-[400px]">
+                  <div className="grid gap-3 p-6 w-[600px]">
                     <div className="grid grid-cols-2 gap-3">
-                      <a href="/analytics" className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
-                        <div className="text-sm font-medium">Analytics</div>
-                        <div className="text-sm text-muted-foreground">AI-powered insights into influencer performance</div>
-                      </a>
-                      <a href="/matching" className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
-                        <div className="text-sm font-medium">Brand Matching</div>
-                        <div className="text-sm text-muted-foreground">Connect with relevant brands automatically</div>
-                      </a>
+                      <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                        <div className="text-sm font-medium">AI Analytics Engine</div>
+                        <div className="text-sm text-muted-foreground">Deep analysis of engagement rates, audience demographics, and content performance</div>
+                      </div>
+                      <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                        <div className="text-sm font-medium">Smart Brand Matching</div>
+                        <div className="text-sm text-muted-foreground">ML-powered algorithm to connect influencers with relevant brands</div>
+                      </div>
+                      <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                        <div className="text-sm font-medium">Automated Outreach</div>
+                        <div className="text-sm text-muted-foreground">AI-driven communication and negotiation with potential partners</div>
+                      </div>
+                      <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                        <div className="text-sm font-medium">Performance Tracking</div>
+                        <div className="text-sm text-muted-foreground">Real-time campaign monitoring and ROI analysis</div>
+                      </div>
                     </div>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               
               <NavigationMenuItem>
+                <NavigationMenuTrigger>Solutions</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="grid gap-3 p-6 w-[400px]">
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">For Brands</div>
+                      <div className="text-sm text-muted-foreground">Access our network of verified influencers and automated campaign management</div>
+                    </div>
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">For Creators</div>
+                      <div className="text-sm text-muted-foreground">Get matched with relevant brands and maximize your earning potential</div>
+                    </div>
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">For Agencies</div>
+                      <div className="text-sm text-muted-foreground">Scale your influencer marketing operations with our AI tools</div>
+                    </div>
+                  </div>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid gap-3 p-6 w-[400px]">
-                    <a href="/case-studies" className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
-                      <div className="text-sm font-medium">Case Studies</div>
-                      <div className="text-sm text-muted-foreground">See how top creators use our platform</div>
-                    </a>
-                    <a href="/pricing" className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
-                      <div className="text-sm font-medium">Pricing</div>
-                      <div className="text-sm text-muted-foreground">Choose the right plan for your needs</div>
-                    </a>
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">Success Stories</div>
+                      <div className="text-sm text-muted-foreground">See how brands achieved 3x ROI with our AI-powered platform</div>
+                    </div>
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">Market Insights</div>
+                      <div className="text-sm text-muted-foreground">Latest trends and data in influencer marketing</div>
+                    </div>
+                    <div className="group grid gap-1 hover:bg-muted p-3 rounded-lg">
+                      <div className="text-sm font-medium">Documentation</div>
+                      <div className="text-sm text-muted-foreground">API guides and technical resources</div>
+                    </div>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" onClick={() => navigate('/login')}>
-            Log in
-          </Button>
-          <Button onClick={() => navigate('/signup')}>
-            Get Started
-          </Button>
         </div>
       </div>
     </div>
