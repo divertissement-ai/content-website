@@ -21,7 +21,7 @@ export const HeroSection = () => {
               {/* Product Tag */}
               <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium bg-primary/10 text-primary rounded-full">
                 <span className="size-2 bg-primary rounded-full animate-pulse" />
-                100K+ Followers Required
+                5K+ Followers Required
               </span>
               
               {/* App Name */}
@@ -36,7 +36,7 @@ export const HeroSection = () => {
             </div>
             
             <p className="text-lg text-gray-600 max-w-md">
-              An AI-powered platform exclusively for creators with 100K+ followers. Join the elite.
+              An AI-powered platform exclusively for creators with 5K+ followers. Join the elite.
             </p>
 
             <div className="space-y-6">
