@@ -131,7 +131,7 @@ const Index = () => {
             </h2>
 
             <p className="text-lg text-gray-600 max-w-2xl">
-              Access all premium features on the go with our powerful iOS app.
+              Access all premium features on the go with our powerful iOS and Android app.
             </p>
             <div className="text-small text-gray-600 max-w-2xl">
               Coming Soon! Sign up for early access.
