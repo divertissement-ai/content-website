@@ -1,10 +1,10 @@
 /* Platform Pages Shared Base Styles */
 :root {
   /* Base theme colors */
-  --ai-primary: #6366f1;
-  --ai-secondary: #a5b4fc;
-  --ai-accent: #4f46e5;
-  --ai-gradient: linear-gradient(135deg, #6366f1, #4f46e5);
+  --ai-primary: #FCFC02;
+  --ai-secondary: #BBBB02;
+  --ai-accent: #FCFC02;
+  --ai-gradient: linear-gradient(135deg, #FCFC02, #FCFC02);
   
   --brand-primary: #ec4899;
   --brand-secondary: #f9a8d4;

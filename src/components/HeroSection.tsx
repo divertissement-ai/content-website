@@ -17,15 +17,18 @@ export const HeroSection = () => {
                   CONTENT
                 </h1>
                 <br/>
-                <div className="text-sm text-foreground/60">
-                  by Divertissement
-                </div>
+                <a href="https://divertissement.ai/" target="_blank" rel="noopener noreferrer">
+                  <div className="text-sm text-foreground/60">
+                    by Divertissement
+                  </div>
+                </a>
+
               </div>
 
-           
+
               {/* Tagline */}
               <p className="text-lg sm:text-xl md:text-2xl font-medium text-foreground/80 max-w-md mt-8 md:mt-6">
-                The exclusive app for verified creators
+              The exclusive app for verified creators
               </p>
             </div>
             

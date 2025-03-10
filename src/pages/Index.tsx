@@ -120,11 +120,16 @@ const Index = () => {
         <div className="container mx-auto text-center space-y-6 md:space-y-8">
           <div className="flex flex-col items-center gap-6">
             <span className="inline-block px-4 py-2 text-sm font-medium bg-primary/10 text-primary rounded-full">
-              Content for iOS
+              Content for iOS and Android
+
             </span>
+            <div className="flex flex-col items-center gap-6">
+              <img src="../../content_logo.png" alt="Content iOS App" className="w-1/2"/>
+            </div>
             <h2 className="text-3xl md:text-5xl font-bold">
               Take Your Content Creation Mobile
             </h2>
+
             <p className="text-lg text-gray-600 max-w-2xl">
               Access all premium features on the go with our powerful iOS app.
             </p>
@@ -132,8 +137,8 @@ const Index = () => {
               Coming Soon! Sign up for early access.
             </div>
             <Button
-              size="lg"
-              className="bg-black hover:bg-black/80 text-white"
+                size="lg"
+                className="bg-black hover:bg-black/80 text-white"
             >
               Join waitlist
             </Button>
@@ -149,13 +154,17 @@ const Index = () => {
               Download on the App Store
             </Button> */}
           </div>
-          
+
           {/* Company attribution */}
           <div className="pt-12 border-t border-gray-100">
             <p className="text-sm text-gray-500">
-              Content is a product by Divertissement
+              Content is a product by{" "}
+              <a href="https://divertissement.ai/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                Divertissement
+              </a>
             </p>
           </div>
+
         </div>
       </section>
     </main>
