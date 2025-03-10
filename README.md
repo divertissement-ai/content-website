@@ -1,44 +1,69 @@
-# Content App Landing Page
+# Welcome to your Lovable project
 
-A modern landing page for our content creation mobile app. This website showcases the features and benefits of our React Native mobile application that helps content creators streamline their workflow.
+## Project info
 
-## About the App
+**URL**: https://lovable.dev/projects/8da42719-0a10-47c0-b36b-706c406ccd3f
 
-Our mobile app helps content creators:
+## How can I edit this code?
 
-- Generate AI-powered content ideas and drafts
-- Optimize content for better engagement
-- Manage content creation workflow on the go
-- Track content performance
+There are several ways of editing your application.
 
-## About this Website
+**Use Lovable**
 
-This is the landing page website built to showcase and market our mobile app. It's built with:
+Simply visit the [Lovable Project](https://lovable.dev/projects/8da42719-0a10-47c0-b36b-706c406ccd3f) and start prompting.
+
+Changes made via Lovable will be committed automatically to this repo.
+
+**Use your preferred IDE**
+
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+Follow these steps:
+
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
+
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
+
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with .
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui for beautiful UI components
-- Tailwind CSS for styling
+- shadcn-ui
+- Tailwind CSS
 
-## Development
+## How can I deploy this project?
 
-### Quick Start
+Simply open [Lovable](https://lovable.dev/projects/8da42719-0a10-47c0-b36b-706c406ccd3f) and click on Share -> Publish.
 
-```sh
-# Install dependencies
-npm install
+## I want to use a custom domain - is that possible?
 
-# Start development server
-npm run dev
-```
-
-### Tech Details
-
-This landing page uses:
-
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-- TypeScript for type safety
-- Vite for fast development
-- React for the UI framework
-- Tailwind CSS for styling
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
