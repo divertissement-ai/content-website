@@ -139,6 +139,7 @@ const Index = () => {
             <Button
                 size="lg"
                 className="bg-black hover:bg-black/80 text-white"
+                onClick={() => window.open('https://form.typeform.com/to/xu0RaVTm', '_blank')}
             >
               Join waitlist
             </Button>
