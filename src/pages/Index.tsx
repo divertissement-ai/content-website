@@ -139,7 +139,7 @@ const Index = () => {
             <Button
                 size="lg"
                 className="bg-black hover:bg-black/80 text-white"
-                onClick={() => window.open('https://form.typeform.com/to/xu0RaVTm', '_blank')}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSccjgVRKzE1x99rW4Jm_dGGfpWfTroxmQrs65qG83va3Dcq7Q/viewform?usp=sharing', '_blank')}
             >
               Join waitlist
             </Button>
