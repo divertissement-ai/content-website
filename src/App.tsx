@@ -7,6 +7,12 @@ import { Navigation } from "./components/Navigation";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+// SEO Optimized Pages
+import Features from "./pages/Features";
+import Pricing from "./pages/Pricing";
+import Blog from "./pages/Blog";
+import About from "./pages/About";
+
 // Platform Pages
 import AIAnalytics from "./pages/platform/AIAnalytics";
 import BrandMatching from "./pages/platform/BrandMatching";
@@ -33,6 +39,12 @@ const App = () => (
         <Navigation />
         <Routes>
           <Route path="/" element={<Index />} />
+          
+          {/* SEO Optimized Routes */}
+          <Route path="/features" element={<Features />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
           
           {/* Platform Routes */}
           <Route path="/platform/ai-analytics" element={<AIAnalytics />} />
