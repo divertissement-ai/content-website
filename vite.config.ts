@@ -20,6 +20,10 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     sourcemap: true,
+    outDir: 'dist',
+    assetsDir: 'assets',
+    target: 'esnext',
+    minify: 'terser',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -27,5 +31,9 @@ export default defineConfig(({ mode }) => ({
         },
       },
     },
+  },
+  preview: {
+    port: 8080,
+    host: true,
   },
 }));
