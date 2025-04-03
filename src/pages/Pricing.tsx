@@ -8,7 +8,7 @@ const Pricing: React.FC = () => {
         <title>HeyContent Pricing - Affordable Plans for Content Creators</title>
         <meta name="description" content="Choose the perfect HeyContent plan for your needs. Flexible pricing options for verified creators with 5k+ followers. Start creating better content today." />
         <meta name="keywords" content="heycontent pricing, content creator platform cost, AI content tools pricing, creator platform subscription" />
-        <link rel="canonical" href="https://heycontent.com/pricing" />
+        <link rel="canonical" href="https://heycontent.co/pricing" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-12">

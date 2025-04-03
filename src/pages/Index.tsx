@@ -77,37 +77,37 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
             <FeatureCard
               title="AI Content Analysis"
-              description="Our AI analyzes your content across platforms to identify what resonates with your audience, from video formats to topics that drive engagement."
+              description="HeyContent's AI analyzes your content across platforms to identify what resonates with your audience, from video formats to topics that drive engagement."
               icon={<Brain className="w-6 h-6" />}
               benefit="Never miss what your audience truly wants"
             />
             <FeatureCard
               title="Smart Brand Matching"
-              description="Get matched with brands that align with your content and audience. Our AI identifies when brands engage with your content and suggests potential partnerships."
+              description="Get matched with brands that align with your content and audience with HeyContent. Our AI identifies when brands engage with your content and suggests potential partnerships."
               icon={<Zap className="w-6 h-6" />}
               benefit="Turn engagement into partnership opportunities"
             />
             <FeatureCard
               title="AI Content Assistant"
-              description="Chat with our AI to brainstorm content ideas, plan your content calendar, and get suggestions based on trending topics in your niche."
+              description="Chat with HeyContent's AI to brainstorm content ideas, plan your content calendar, and get suggestions based on trending topics in your niche."
               icon={<MessageSquare className="w-6 h-6" />}
               benefit="Your personal creative partner"
             />
             <FeatureCard
               title="Audience Insights"
-              description="Discover detailed demographics about your audience, including age, location, interests, and viewing patterns across all your connected platforms."
+              description="Discover detailed demographics about your audience with HeyContent, including age, location, interests, and viewing patterns across all your connected platforms."
               icon={<BarChart3 className="w-6 h-6" />}
               benefit="Know exactly who's watching and why"
             />
             <FeatureCard
               title="Performance Tracking"
-              description="Track which content types perform best - whether it's 'how-to' tutorials, 'day in the life' vlogs, or other formats specific to your niche."
+              description="Track which content types perform best with HeyContent - whether it's 'how-to' tutorials, 'day in the life' vlogs, or other formats specific to your niche."
               icon={<TrendingUp className="w-6 h-6" />}
               benefit="Data-driven content strategy"
             />
             <FeatureCard
               title="Unified Communication"
-              description="Never miss an important email or brand outreach again. Our platform consolidates all your professional communications in one place."
+              description="Never miss an important email or brand outreach again. HeyContent consolidates all your professional communications in one place."
               icon={<Mail className="w-6 h-6" />}
               benefit="Stay on top of every opportunity"
             />
@@ -124,7 +124,7 @@ const Index = () => {
 
             </span>
             <div className="flex flex-col items-center gap-6">
-              <img src="../../content_logo.png" alt="Content iOS App" className="w-1/2"/>
+              <img src="../../content_logo.png" alt="HeyContent iOS App" className="w-1/2"/>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold">
               Take Your Content Creation Mobile

@@ -8,7 +8,7 @@ const Features: React.FC = () => {
         <title>HeyContent Features - Advanced AI Tools for Content Creators</title>
         <meta name="description" content="Discover HeyContent's powerful features: AI-powered content creation, analytics, scheduling, and more. Perfect for verified creators with 5k+ followers." />
         <meta name="keywords" content="heycontent features, content creation tools, AI content platform, creator analytics, content scheduling" />
-        <link rel="canonical" href="https://heycontent.com/features" />
+        <link rel="canonical" href="https://heycontent.co/features" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-12">

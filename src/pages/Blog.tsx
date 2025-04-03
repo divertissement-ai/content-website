@@ -32,7 +32,7 @@ const Blog: React.FC = () => {
         <title>HeyContent Blog - Content Creation Tips & Insights</title>
         <meta name="description" content="Discover expert tips, industry insights, and best practices for content creation. Learn how to grow your audience and create engaging content with HeyContent." />
         <meta name="keywords" content="heycontent blog, content creation tips, creator insights, AI content tools, content marketing" />
-        <link rel="canonical" href="https://heycontent.com/blog" />
+        <link rel="canonical" href="https://heycontent.co/blog" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-12">

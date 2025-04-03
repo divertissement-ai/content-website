@@ -8,7 +8,7 @@ const About: React.FC = () => {
         <title>About HeyContent - Empowering Content Creators with AI</title>
         <meta name="description" content="Learn about HeyContent's mission to empower content creators with AI tools. Discover our story, values, and commitment to helping creators succeed." />
         <meta name="keywords" content="heycontent about, content creator platform, AI content tools, creator empowerment, content creation platform" />
-        <link rel="canonical" href="https://heycontent.com/about" />
+        <link rel="canonical" href="https://heycontent.co/about" />
       </Helmet>
 
       <div className="container mx-auto px-4 py-12">
